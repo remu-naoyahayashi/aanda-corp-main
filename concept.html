@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A&A consulting</title>
+
+    <link rel="icon" href="./images/favicon.png" sizes="32x32" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" class="header__logo">
+        <img src="./images/logo_black.webp" alt="A$A consulting" />
+      </a>
+      <button class="header__btn js-menu-btn">
+        <span class="header__btn-bar"></span>
+        <span class="header__btn-bar"></span>
+        <span class="header__btn-bar"></span>
+      </button>
+
+      <nav class="header__nav">
+        <ul class="header__nav-lists">
+          <li class="header__nav-list">
+            <a href="#" class="header__nav-link hover-default">経営理念</a>
+          </li>
+          <li class="header__nav-list">
+            <a href="#concept-info" class="header__nav-link hover-default">会社概要</a>
+          </li>
+          <li class="header__nav-list">
+            <a href="/members.html" class="header__nav-link hover-default">メンバー一覧</a>
+          </li>
+          <li class="header__nav-list">
+            <a href="/partners.html" class="header__nav-link hover-default">取り扱い保険会社</a>
+          </li>
+          <li class="header__nav-list">
+            <a href="/contact.html" class="header__nav-link hover-default">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="drawer js-drawer">
+      <nav class="drawer__nav">
+        <ul class="drawer__nav-lists">
+          <li class="drawer__nav-list">
+            <a href="#" class="drawer__nav-link js-nav-link hover-default">経営理念</a>
+          </li>
+          <li class="drawer__nav-list">
+            <a href="#concept-info" class="drawer__nav-link js-nav-link hover-default">会社概要</a>
+          </li>
+          <li class="drawer__nav-list">
+            <a href="/members.html" class="drawer__nav-link js-nav-link hover-default"
+              >メンバー一覧</a
+            >
+          </li>
+          <li class="drawer__nav-list">
+            <a href="/partners.html" class="drawer__nav-link js-nav-link hover-default"
+              >取り扱い保険会社</a
+            >
+          </li>
+          <li class="drawer__nav-list">
+            <a href="/contact.html" class="drawer__nav-link js-nav-link hover-default"
+              >お問い合わせ</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="concept-page">
+      <section class="fv">
+        <div class="fv__inner">
+          <div class="fv__text-inner">
+            <p class="fv__head-en">Our Mission</p>
+            <p class="fv__head-ja font-size4">ミッション</p>
+            <h1 class="fv__heading">全国に保障を届け続ける</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about__inner">
+          <p class="about__message">
+            我々の使命でもある「全国に保障を届け続ける」ためにも、マーケット戦略・ターゲット戦略・セールス戦略のそれぞれにおいて他者と競合することないようにして必要な人にお会いして参ります。首都圏では当たり前とされているような事だったとしても、情報が行き届かないエリアは日本各地に未だ数多くあり、ほとんどの人が必要性も理解しないまま比較検討できずに保険商品に加入して困っている現状を少しでも良くしたい。そのために弊社所属社員は”募集人は五者であれ”の標語のもとに、それぞれの背景や専門、理念を武器として研鑽しつづけてAランクの営業パーソンとなるべく成長することをお約束します。
+          </p>
+        </div>
+
+        <div class="about__contents">
+          <div class="about__inner">
+            <div class="about__vision">
+              <h2 class="about__heading-en">Corporate Vision</h2>
+              <h2 class="about__heading-ja font-size2">経営理念</h2>
+              <div class="about__body">
+                <p class="about__text font-size-pc3-4">
+                  誠意と熱意と創意を持って全国に保障を届け続ける<br
+                    class="is-sp"
+                  />Aランクの人材を育成し、<br
+                    class="is-pc"
+                  />全従業員の物心両面の幸福を追求すると同時にお客様の挑戦を後押しする。
+                </p>
+              </div>
+            </div>
+            <div class="about__creed">
+              <h2 class="about__heading-en">Corporate Creed</h2>
+              <h2 class="about__heading-ja font-size2">社是</h2>
+              <div class="about__body">
+                <div class="about__creed-img">
+                  <img src="./images/corporate-creed.webp" alt="至誠通天" loading="lazy" />
+                </div>
+                <p class="about__text font-size-pc3-4">
+                  誠を尽くして行動すれば、人の心も動かされる。<br />嘘偽りのない自らの心のあり方が運命を決める。
+                </p>
+              </div>
+            </div>
+            <div class="about__motto">
+              <h2 class="about__heading-en">Company Motto</h2>
+              <h2 class="about__heading-ja font-size2">社訓</h2>
+              <div class="about__body about__body--motto">
+                <ul class="about__lists">
+                  <li class="about__list">
+                    一.　創造　仕事は自ら創るべきで、誰かから与えられるべきでない。
+                  </li>
+                  <li class="about__list">
+                    一.　猛進　仕事は前のめりに取り組み、受け身で待つものではない。
+                  </li>
+                  <li class="about__list">
+                    一.　挑戦　冒険なければ成長なし、常識以上の非常識こそ鍵となる。
+                  </li>
+                  <li class="about__list">
+                    一.　克己　周囲の事象は心の反映であり、自分を律する必要がある。
+                  </li>
+                  <li class="about__list">
+                    一.　献身　使命感を持ち、必ずお客様のお役立ちをする義務がある。
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="values">
+        <div class="values__inner">
+          <h2 class="values__heading-en">Core Values</h2>
+          <h2 class="values__heading-ja">行動指針</h2>
+
+          <ul class="values__lists">
+            <li class="values__list">
+              <div class="values__number">01</div>
+              <h3 class="values__sub-heading font-size1">競合せず、独占せよ</h3>
+              <p class="values__text">
+                我々の使命でもある「全国に保障を届け続ける」ためにも、マーケット戦略・ターゲット戦略・セールス戦略のそれぞれにおいて他者と競合することないようにして必要な人にお会いして参ります。
+              </p>
+              <p class="values__text">
+                首都圏では当たり前とされているような事だったとしても、情報が行き届かないエリアは日本各地に未だ数多くあり、ほとんどの人が必要性も理解しないまま比較検討できずに保険商品に加入して困っている現状を少しでも良くしたい。<br />そのために弊社所属社員は”募集人は五者であれ”の標語のもとに、それぞれの背景や専門、理念を武器として研鑽しつづけてAランクの営業パーソンとなるべく成長することをお約束します。
+              </p>
+            </li>
+            <li class="values__list">
+              <div class="values__number">02</div>
+              <h3 class="values__sub-heading font-size1">募集人は五者であれ</h3>
+              <p class="values__text">
+                保険募集人という営業職でも最難関の職務を全うするにあたり、信念と使命を持つマインド型の営業パーソンとなったうえで、下記する５つのスペシャリストとなることを目指し続けます。
+              </p>
+              <ul class="values__sub-lists">
+                <li class="values__sub-list">自己の興味を探求して知識を極める「学者」</li>
+                <li class="values__sub-list">相手に合わせ卓越した話法で伝える「役者」</li>
+                <li class="values__sub-list">場の空気を和ませ傾聴し関係を作る「芸者」</li>
+                <li class="values__sub-list">的確な質問で課題を見つけ処方する「医者」</li>
+                <li class="values__sub-list">苦難を耐え好機を逃さぬ神出鬼没な「忍者」</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="message">
+        <div class="message__inner">
+          <h2 class="message__heading-en">Top Message</h2>
+          <h2 class="message__heading-ja font-size1">代表挨拶</h2>
+
+          <div class="message__img">
+            <img
+              src="./images/top-message-img.webp"
+              alt="代表取締役 桂 雄人 アラン"
+              loading="lazy"
+            />
+            <div class="message__img-inner">
+              <p class="message__post">代表取締役</p>
+              <p class="message__name">桂 雄人 アラン</p>
+            </div>
+          </div>
+
+          <p class="message__text">
+            代表の桂です。<br />当社がA級の商品、A級の営業マンを強く意識するのには、理由があります。保険マンとして無我夢中で走り抜けた先に見えたのは、保険業界の抱える様々な課題でした。
+          </p>
+          <p class="message__text">
+            十分に比較せずに、最初に紹介された営業マンから内容をよく理解せずに加入する。このような状態でお申し込みになられているお客様があまりにも多かったのです。保険商品という目の見えない金融商品を扱うことは、ほかの金融商品以上に注意しなくてはなりません。お客様との情報格差が大きいからこそ、保険商品を比較せずに選ぶことは危険だと考えています。<br
+              class="is-sp"
+            />さらに、比較して商品を選ぶことと同様に大切なのが、心から信頼することのできる営業マンです。信念と使命感を持って保障を全国にお届けし続けられるよう、努力して参ります。
+          </p>
+          <p class="message__text">
+            保険はよく人生を守るブレーキのようなものだと言われます。<br
+              class="is-sp"
+            />しかし、弊社では保険が人生のアクセルになってくれると考えています。保険に加入することで万が一を不必要に恐れることなく日々の力強く前進する活力とできるのです。大航海時代に生まれたとされる保険の仕組みは当時きっと多くの船乗りををより冒険的な航路へと駆り立てたことでしょう。”保障を持って頂き人生の挑戦を後押しすること”が我々の仕事です。
+          </p>
+          <div class="message__slogan">
+            <picture>
+              <source media="(min-width: 660px)" srcset="./images/message-slogan-pc.webp" />
+              <img
+                src="./images/message-slogan.webp"
+                alt="保険は商品で選んで、営業マンで決める"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <p class="message__text message__text--2">
+            A&amp;A Consulting
+            株式会社はお客様の保険に対する認識を変えられるよう、一流の保険商品を取り揃えることと一流の営業マンを育成することを誓います。
+          </p>
+        </div>
+      </section>
+
+      <section class="info" id="concept-info">
+        <div class="info__inner">
+          <h2 class="info__heading-en">Company Information</h2>
+          <h2 class="info__heading-ja font-size1">会社概要</h2>
+
+          <div class="info-table">
+            <div class="info-table__head">会社名</div>
+            <div class="info-table__body">
+              <span class="info-table__text">A&amp;A Consulting 株式会社</span>
+            </div>
+            <div class="info-table__head">設立年月日</div>
+            <div class="info-table__body">
+              <span class="info-table__text">2019年 1月</span>
+            </div>
+            <div class="info-table__head">本社所在地</div>
+            <div class="info-table__body">
+              <address class="info-table__text info-table__text--inline">
+                東京都港区虎ノ門４丁目１ー６
+              </address>
+              <span class="info-table__text info-table__text--inline">第二大石ビル4階</span>
+            </div>
+            <div class="info-table__head">電話番号</div>
+            <div class="info-table__body is-sp">
+              <span class="info-table__text">TEL 03-6844-9206</span>
+              <span class="info-table__text">FAX 03-6271-9076</span>
+              <span class="info-table__date font-size4">受付時間：月曜日～金曜日 10時～18時</span>
+            </div>
+            <div class="info-table__body is-pc">
+              <span class="info-table__text info-table__text--inline"
+                >TEL&emsp;03-6844-9206&emsp;&emsp;</span
+              >
+              <span class="info-table__text info-table__text--inline">FAX&emsp;03-6271-9076</span>
+              <span class="info-table__date font-size4">受付時間：月曜日～金曜日 10時～18時</span>
+            </div>
+            <div class="info-table__head">代表者氏名</div>
+            <div class="info-table__body">
+              <span class="info-table__text">桂 雄人 アラン</span>
+            </div>
+            <div class="info-table__head">資本金</div>
+            <div class="info-table__body">
+              <span class="info-table__text">2000万円</span>
+            </div>
+            <div class="info-table__head">従業員数</div>
+            <div class="info-table__body">
+              <span class="info-table__text">54名 (2025年6月時点)</span>
+            </div>
+            <div class="info-table__head">事業内容</div>
+            <div class="info-table__body">
+              <ul class="info-table__lists">
+                <li class="info-table__list">生命保険の募集及び損害保険代理店業務</li>
+                <li class="info-table__list">
+                  経営者、従業員など企業に対する<br class="is-sp" />教育・研修・セミナー
+                </li>
+                <li class="info-table__list">相続及び事業承継に関するコンサルティング</li>
+                <li class="info-table__list">ファイナンシャルプランニング業務</li>
+                <li class="info-table__list">法人コンサルティング</li>
+                <li class="info-table__list">個人コンサルティング</li>
+              </ul>
+            </div>
+            <div class="info-table__head">主要取引銀行</div>
+            <div class="info-table__body">
+              <span class="info-table__text">みずほ銀行</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__flex">
+          <a href="/" class="footer__logo"
+            ><img src="./images/logo_white.webp" alt="A&A consulting" loading="lazy"
+          /></a>
+          <nav class="footer__nav">
+            <ul class="footer__lists">
+              <li class="footer__list">
+                <a href="#" class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >企業理念</a
+                >
+              </li>
+              <li class="footer__list">
+                <a
+                  href="#concept-info"
+                  class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >会社概要</a
+                >
+              </li>
+              <li class="footer__list">
+                <a
+                  href="/members.html"
+                  class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >メンバー一覧</a
+                >
+              </li>
+              <li class="footer__list">
+                <a href="#" class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >プライバシーポリシー</a
+                >
+              </li>
+              <li class="footer__list">
+                <a
+                  href="/partners.html"
+                  class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >保険一覧</a
+                >
+              </li>
+              <li class="footer__list">
+                <a
+                  href="/contact.html"
+                  class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >お問い合わせ</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <small class="footer__copyright font-size-caption"
+          >&copy; 2025 A&amp;A consulting All rights reserved</small
+        >
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

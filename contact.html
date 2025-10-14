@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A&A consulting</title>
+
+    <link rel="icon" href="./images/favicon.png" sizes="32x32" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" class="header__logo">
+        <img src="./images/logo_black.webp" alt="A$A consulting" />
+      </a>
+      <button class="header__btn js-menu-btn">
+        <span class="header__btn-bar"></span>
+        <span class="header__btn-bar"></span>
+        <span class="header__btn-bar"></span>
+      </button>
+
+      <nav class="header__nav">
+        <ul class="header__nav-lists">
+          <li class="header__nav-list">
+            <a href="/concept.html" class="header__nav-link hover-default">経営理念</a>
+          </li>
+          <li class="header__nav-list">
+            <a href="/concept.html#concept-info" class="header__nav-link hover-default">会社概要</a>
+          </li>
+          <li class="header__nav-list">
+            <a href="/members.html" class="header__nav-link hover-default">メンバー一覧</a>
+          </li>
+          <li class="header__nav-list">
+            <a href="/partners.html" class="header__nav-link hover-default">取り扱い保険会社</a>
+          </li>
+          <li class="header__nav-list">
+            <a href="#" class="header__nav-link hover-default">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="drawer js-drawer">
+      <nav class="drawer__nav">
+        <ul class="drawer__nav-lists">
+          <li class="drawer__nav-list">
+            <a href="/concept.html" class="drawer__nav-link js-nav-link hover-default">経営理念</a>
+          </li>
+          <li class="drawer__nav-list">
+            <a href="/concept.html#concept-info" class="drawer__nav-link js-nav-link hover-default"
+              >会社概要</a
+            >
+          </li>
+          <li class="drawer__nav-list">
+            <a href="/members.html" class="drawer__nav-link js-nav-link hover-default"
+              >メンバー一覧</a
+            >
+          </li>
+          <li class="drawer__nav-list">
+            <a href="/partners.html" class="drawer__nav-link js-nav-link hover-default"
+              >取り扱い保険会社</a
+            >
+          </li>
+          <li class="drawer__nav-list">
+            <a href="#" class="drawer__nav-link js-nav-link hover-default">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="contact-page">
+      <section class="contact">
+        <div class="contact__inner">
+          <h1 class="contact__heading-en">contact</h1>
+          <h1 class="contact__heading-ja">お問い合わせ</h1>
+
+          <p class="contact__text">
+            弊社へのお問い合わせは下記より承ります。<br />ご返信には2〜３営業日ほどいただく場合がございます。<br />恐れ入りますがご了承くださいませ。
+          </p>
+
+          <div class="form">
+            <form>
+              <div class="form__fields">
+                <div class="form-field">
+                  <label for="your-company" class="form-field__label">
+                    <span class="form-field__head font-size4">会社名</span>
+                    <span class="form-field__note"> *は記載必須の項目</span>
+                  </label>
+                  <div class="form-field__item">
+                    <input
+                      class="form-field__text"
+                      type="text"
+                      id="your-company"
+                      name="your-company"
+                    />
+                  </div>
+                </div>
+                <div class="form-field">
+                  <label for="your-name" class="form-field__label">
+                    <span class="form-field__head font-size4">お名前 *</span>
+                  </label>
+                  <div class="form-field__item">
+                    <input
+                      class="form-field__text"
+                      type="text"
+                      id="your-name"
+                      name="your-name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-field">
+                  <label for="your-email" class="form-field__label">
+                    <span class="form-field__head font-size4">メールアドレス *</span>
+                  </label>
+                  <div class="form-field__item">
+                    <input
+                      class="form-field__text"
+                      type="email"
+                      id="your-email"
+                      name="your-email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-field">
+                  <label for="your-subject" class="form-field__label">
+                    <span class="form-field__head font-size4">件名 *</span>
+                  </label>
+                  <div class="form-field__item">
+                    <input
+                      class="form-field__text"
+                      type="text"
+                      id="your-subject"
+                      name="your-subject"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-field">
+                  <label for="your-message" class="form-field__label">
+                    <span class="form-field__head font-size4">ご相談内容 *</span>
+                  </label>
+                  <div class="form-field__item">
+                    <textarea
+                      class="form-field__text form-field__textarea"
+                      id="your-message"
+                      name="your-message"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__privacy">
+                <label class="form__checkbox">
+                  <input type="checkbox" class="form__checkbox-input" required />
+                  <span class="form__checkbox-text"
+                    ><a href="#" target="_blank" class="hover-default">プライバシーポリシー</a
+                    >を確認しました</span
+                  >
+                </label>
+              </div>
+
+              <div class="form__button font-size2 hover-default">
+                <input type="submit" value="送  信" class="form__button-input button" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__flex">
+          <a href="/" class="footer__logo"
+            ><img src="./images/logo_white.webp" alt="A&A consulting" loading="lazy"
+          /></a>
+          <nav class="footer__nav">
+            <ul class="footer__lists">
+              <li class="footer__list">
+                <a
+                  href="/concept.html"
+                  class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >企業理念</a
+                >
+              </li>
+              <li class="footer__list">
+                <a
+                  href="/concept.html#concept-info"
+                  class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >会社概要</a
+                >
+              </li>
+              <li class="footer__list">
+                <a
+                  href="/partners.html"
+                  class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >メンバー一覧</a
+                >
+              </li>
+              <li class="footer__list">
+                <a href="#" class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >プライバシーポリシー</a
+                >
+              </li>
+              <li class="footer__list">
+                <a
+                  href="/partners.html"
+                  class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >保険一覧</a
+                >
+              </li>
+              <li class="footer__list">
+                <a href="#" class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >お問い合わせ</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <small class="footer__copyright font-size-caption"
+          >&copy; 2025 A&amp;A consulting All rights reserved</small
+        >
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

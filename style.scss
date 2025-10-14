@@ -1,0 +1,7 @@
+// 読み込み専用
+@import "styles/modules/variables";
+@import "styles/breakpoints/base";
+
+@media (min-width: 660px) {
+  @import "styles/breakpoints/660up";
+}

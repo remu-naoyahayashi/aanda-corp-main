@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A&A consulting</title>
+
+    <link rel="icon" href="./images/favicon.png" sizes="32x32" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="header__logo">
+        <img src="./images/logo_black.webp" alt="A$A consulting" />
+      </a>
+      <button class="header__btn js-menu-btn">
+        <span class="header__btn-bar"></span>
+        <span class="header__btn-bar"></span>
+        <span class="header__btn-bar"></span>
+      </button>
+
+      <nav class="header__nav">
+        <ul class="header__nav-lists">
+          <li class="header__nav-list">
+            <a href="/concept.html" class="header__nav-link hover-default">経営理念</a>
+          </li>
+          <li class="header__nav-list">
+            <a href="/concept.html#concept-info" class="header__nav-link hover-default">会社概要</a>
+          </li>
+          <li class="header__nav-list">
+            <a href="/members.html" class="header__nav-link hover-default">メンバー一覧</a>
+          </li>
+          <li class="header__nav-list">
+            <a href="/partners.html" class="header__nav-link hover-default">取り扱い保険会社</a>
+          </li>
+          <li class="header__nav-list">
+            <a href="/contact.html" class="header__nav-link hover-default">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="drawer js-drawer">
+      <nav class="drawer__nav">
+        <ul class="drawer__nav-lists">
+          <li class="drawer__nav-list">
+            <a href="/concept.html" class="drawer__nav-link js-nav-link hover-default">経営理念</a>
+          </li>
+          <li class="drawer__nav-list">
+            <a href="/concept.html#concept-info" class="drawer__nav-link js-nav-link hover-default"
+              >会社概要</a
+            >
+          </li>
+          <li class="drawer__nav-list">
+            <a href="/members.html" class="drawer__nav-link js-nav-link hover-default"
+              >メンバー一覧</a
+            >
+          </li>
+          <li class="drawer__nav-list">
+            <a href="/partners.html" class="drawer__nav-link js-nav-link hover-default"
+              >取り扱い保険会社</a
+            >
+          </li>
+          <li class="drawer__nav-list">
+            <a href="/contact.html" class="drawer__nav-link js-nav-link hover-default"
+              >お問い合わせ</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="top-page">
+      <section class="fv">
+        <div class="fv__slider" id="js-fv-slider">
+          <div class="fv__slide fv__slide--1 is-active js-top-fv-slide"></div>
+          <div class="fv__slide fv__slide--2 js-top-fv-slide"></div>
+          <!-- <div class="fv__slide fv__slide--2 js-top-fv-slide"></div> -->
+        </div>
+        <div class="fv__text">
+          <div class="fv__text-inner">
+            <p class="fv__en">Our Mission</p>
+            <h1 class="fv__title">全国に、<br />保障を届け続ける</h1>
+          </div>
+        </div>
+        <p class="fv__sub-text">Simpler insurance, smarter choices nationwide.</p>
+        <a
+          href="https://m.aaconsulting.co.jp/hidori/bmn9epbj8mhd7"
+          class="fv__reserve-btn hover-default"
+          target="_blank"
+          >相談予約</a
+        >
+      </section>
+
+      <section class="about">
+        <div class="about__inner">
+          <div class="about-what">
+            <h2 class="about-what__heading">what we do</h2>
+            <div class="about-what__container">
+              <p class="about-what__text">
+                私たちは、保険のプロフェッショナルとして<br />お客様のお金に関する不安に寄り添い、<br />知識と安心を全国へと届け続けます。<br />オンラインで、日本全国<br />いつでもどこでも、気軽に相談。<br />全国のお金の不安を、安心へ。
+              </p>
+              <a href="/concept.html" class="about-what__link">view more</a>
+              <div class="about-what__map">
+                <picture>
+                  <source media="(min-width: 660px)" srcset="./images/top-about-map-pc.webp" />
+                  <img src="./images/top-about-map.webp" alt="日本地図" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-consulting">
+            <h2 class="about-consulting__heading">
+              スマホひとつで<br />いつでもどこでも<br />気軽に相談
+            </h2>
+            <div class="about-consulting__img">
+              <img src="./images/top-about-img.png" alt="イメージ画像" loading="lazy" />
+            </div>
+            <a
+              href="https://m.aaconsulting.co.jp/hidori/bmn9epbj8mhd7"
+              class="about-consulting__reserve-btn hover-default"
+              target="_blank"
+              >相談予約</a
+            >
+            <p class="about-consulting__text">お仕事おわりや<br />お子様の寝かしつけ後でも相談OK</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="steps">
+        <div class="steps__inner">
+          <div class="steps__head">3 steps</div>
+          <h2 class="steps__heading">ご相談までの流れ</h2>
+          <ul class="steps__lists">
+            <li class="steps-list">
+              <div class="steps-list__img">
+                <picture>
+                  <source media="(min-width: 660px)" srcset="./images/steps-img1-pc.png" />
+                  <img src="./images/steps-img1.png" alt="01" loading="lazy" />
+                </picture>
+              </div>
+              <div class="steps-list__body">
+                <p class="steps-list__text"><span>担当者を選んで</span><span>日時を予約</span></p>
+                <div class="steps-list__link-inner">
+                  <a
+                    href="https://m.aaconsulting.co.jp/hidori/bmn9epbj8mhd7"
+                    class="steps-list__link hover-default"
+                    target="_blank"
+                    >担当者が決まっていない方はこちら</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="steps-list">
+              <div class="steps-list__img">
+                <picture>
+                  <source media="(min-width: 660px)" srcset="./images/steps-img2-pc.png" />
+                  <img src="./images/steps-img2.png" alt="02" loading="lazy" />
+                </picture>
+              </div>
+              <div class="steps-list__body">
+                <p class="steps-list__text">
+                  <span>届いたメールに</span><span>記載のある</span><br /><span>ZOOMのURLに</span
+                  ><span>アクセス</span>
+                </p>
+              </div>
+            </li>
+            <li class="steps-list">
+              <div class="steps-list__img">
+                <picture>
+                  <source media="(min-width: 660px)" srcset="./images/steps-img3-pc.png" />
+                  <img src="./images/steps-img3.png" alt="03" loading="lazy" />
+                </picture>
+              </div>
+              <div class="steps-list__body">
+                <p class="steps-list__text"><span>お金の悩みを</span><span>あれこれ相談</span></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="service">
+        <div class="service__inner">
+          <div class="service__box">
+            <div class="service__head-inner">
+              <div class="service__heading-inner">
+                <h2 class="service__heading-en">service</h2>
+                <h2 class="service__heading-ja">サービスについて</h2>
+              </div>
+              <p class="service__head-text font-size4">
+                個人のお客様も、法人のお客様も。<br />お金と保険に関するあらゆるお悩みをご相談いただけます
+              </p>
+            </div>
+
+            <ul class="service__lists">
+              <li class="service__list">
+                <div class="service__img">
+                  <img src="./images/top-service1.webp" alt="Login Icon" loading="lazy" />
+                </div>
+                <p class="service__text">保険の新規加入</p>
+              </li>
+              <li class="service__list">
+                <div class="service__img">
+                  <img src="./images/top-service2.webp" alt="Search Icon" loading="lazy" />
+                </div>
+                <p class="service__text">保険の見直し</p>
+              </li>
+              <li class="service__list">
+                <div class="service__img">
+                  <img src="./images/top-service3.webp" alt="Home Icon" loading="lazy" />
+                </div>
+                <p class="service__text">住宅ローン</p>
+              </li>
+              <li class="service__list">
+                <div class="service__img">
+                  <img src="./images/top-service4.webp" alt="Coin Icon" loading="lazy" />
+                </div>
+                <p class="service__text">資産形成</p>
+              </li>
+              <li class="service__list">
+                <div class="service__img">
+                  <img src="./images/top-service5.webp" alt="Gragh Icon" loading="lazy" />
+                </div>
+                <p class="service__text">ライフプラン</p>
+              </li>
+              <li class="service__list">
+                <div class="service__img">
+                  <img src="./images/top-service6.webp" alt="Person Icon" loading="lazy" />
+                </div>
+                <p class="service__text">相続</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="members">
+        <div class="members__inner">
+          <div class="members__head-inner">
+            <h2 class="members__heading-en">members</h2>
+            <h2 class="members__heading-ja font-size4">メンバー 一覧</h2>
+          </div>
+
+          <div class="members__slides js-members-slides swiper">
+            <ul class="members__slides-wrapper swiper-wrapper">
+              <li class="members__slide swiper-slide">
+                <img alt="Takuya Ishii" src="./images/members/Takuya_Ishii.webp" loading="lazy" />
+              </li>
+              <li class="members__slide swiper-slide">
+                <img alt="Maya Tomikawa" src="./images/members/Maya_Tomikawa.webp" loading="lazy" />
+              </li>
+              <li class="members__slide swiper-slide">
+                <img
+                  alt="Makoto Umezaki"
+                  src="./images/members/Makoto_Umezaki.webp"
+                  loading="lazy"
+                />
+              </li>
+              <li class="members__slide swiper-slide">
+                <img alt="Fusuke Kato" src="./images/members/Fusuke_Kato.webp" loading="lazy" />
+              </li>
+              <li class="members__slide swiper-slide">
+                <img
+                  alt="Hisanari Saito"
+                  src="./images/members/Hisanari_Saito.webp"
+                  loading="lazy"
+                />
+              </li>
+              <li class="members__slide swiper-slide">
+                <img alt="Kaori Masuda" src="./images/members/Kaori_Masuda.webp" loading="lazy" />
+              </li>
+              <li class="members__slide swiper-slide">
+                <img alt="Junkou Minami" src="./images/members/Junkou_Minami.webp" loading="lazy" />
+              </li>
+              <li class="members__slide swiper-slide">
+                <img alt="Kosuke Gomi" src="./images/members/Kosuke_Gomi.webp" loading="lazy" />
+              </li>
+              <li class="members__slide swiper-slide">
+                <img alt="Shuta Otani" src="./images/members/Shuta_Otani.webp" loading="lazy" />
+              </li>
+              <li class="members__slide swiper-slide">
+                <img
+                  alt="Hitomi Yamashita"
+                  src="./images/members/Hitomi_Yamashita.webp"
+                  loading="lazy"
+                />
+              </li>
+            </ul>
+
+            <div class="members__slide-next js-members-slide-next swiper-button-next"></div>
+            <div class="member__link-inner is-sp">
+              <a href="/members.html" class="members__link hover-default">More Members</a>
+            </div>
+          </div>
+
+          <div class="members__text-inner">
+            <p class="members__main-text">オンラインでの相談だからこそ<br />伝わる人柄と信頼を</p>
+            <div class="member__link-inner is-pc">
+              <a href="/members.html" class="members__link hover-default">More Members</a>
+            </div>
+          </div>
+          <p class="members__text font-size3">
+            「オンラインでの相談は不安」<br />だからこそ、誠実さと温かみのあるメンバーが<br />ご納得がいくまで相ご相談に乗ります。<br />心を許して相談できる、温度感の合う担当者を。
+          </p>
+        </div>
+      </section>
+
+      <section class="qa">
+        <div class="qa__inner">
+          <h2 class="qa__heading">Q＆A</h2>
+
+          <ul class="qa__lists">
+            <li class="qa-list js-top-qa">
+              <button type="button" class="qa-list__head js-top-accordion">
+                <span class="qa-list__head-text font-size-pc4"
+                  >相談するにあたって、料金はかかりますか？</span
+                >
+              </button>
+              <div class="qa-list__body">
+                <div class="qa-list__a">
+                  <span class="qa-list__a-text"
+                    >テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト</span
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="qa-list js-top-qa">
+              <button type="button" class="qa-list__head js-top-accordion">
+                <span class="qa-list__head-text font-size-pc4"
+                  >1回の相談時間はどれくらいですか？</span
+                >
+              </button>
+              <div class="qa-list__body">
+                <div class="qa-list__a">
+                  <span class="qa-list__a-text"
+                    >テキストテキストテキストテキストテキストテキスト</span
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="qa-list js-top-qa">
+              <button type="button" class="qa-list__head js-top-accordion">
+                <span class="qa-list__head-text font-size-pc4">何回くらい相談できますか？</span>
+              </button>
+              <div class="qa-list__body">
+                <div class="qa-list__a">
+                  <span class="qa-list__a-text"
+                    >テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト</span
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="qa-list js-top-qa">
+              <button type="button" class="qa-list__head js-top-accordion">
+                <span class="qa-list__head-text font-size-pc4"
+                  >対面での相談を希望したいのですが、可能ですか？</span
+                >
+              </button>
+              <div class="qa-list__body">
+                <div class="qa-list__a">
+                  <span class="qa-list__a-text"
+                    >テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト</span
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="qa-list js-top-qa">
+              <button type="button" class="qa-list__head js-top-accordion">
+                <span class="qa-list__head-text font-size-pc4"
+                  >保険以外のことも相談できますか？</span
+                >
+              </button>
+              <div class="qa-list__body">
+                <div class="qa-list__a">
+                  <span class="qa-list__a-text"
+                    >テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト</span
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="qa-list js-top-qa">
+              <button type="button" class="qa-list__head js-top-accordion">
+                <span class="qa-list__head-text font-size-pc4">土日の相談は可能ですか？</span>
+              </button>
+              <div class="qa-list__body">
+                <div class="qa-list__a">
+                  <span class="qa-list__a-text"
+                    >テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト</span
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="qa-list js-top-qa">
+              <button type="button" class="qa-list__head js-top-accordion">
+                <span class="qa-list__head-text font-size-pc4">相談可能時間は？</span>
+              </button>
+              <div class="qa-list__body">
+                <div class="qa-list__a">
+                  <span class="qa-list__a-text"
+                    >テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト</span
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="qa-list js-top-qa">
+              <button type="button" class="qa-list__head js-top-accordion">
+                <span class="qa-list__head-text font-size-pc4"
+                  >オンライン相談時、画面をONにする必要はありますか？</span
+                >
+              </button>
+              <div class="qa-list__body">
+                <div class="qa-list__a">
+                  <span class="qa-list__a-text"
+                    >テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト</span
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="qa-list js-top-qa">
+              <button type="button" class="qa-list__head js-top-accordion">
+                <span class="qa-list__head-text font-size-pc4"
+                  >どのようなFPに相談するか事前に知りたいです</span
+                >
+              </button>
+              <div class="qa-list__body">
+                <div class="qa-list__a">
+                  <span class="qa-list__a-text"
+                    >テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキスト</span
+                  >
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__flex">
+          <a href="#" class="footer__logo"
+            ><img src="./images/logo_white.webp" alt="A&A consulting" loading="lazy"
+          /></a>
+          <nav class="footer__nav">
+            <ul class="footer__lists">
+              <li class="footer__list">
+                <a
+                  href="/concept.html"
+                  class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >企業理念</a
+                >
+              </li>
+              <li class="footer__list">
+                <a
+                  href="/concept.html#concept-info"
+                  class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >会社概要</a
+                >
+              </li>
+              <li class="footer__list">
+                <a
+                  href="/members.html"
+                  class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >メンバー一覧</a
+                >
+              </li>
+              <li class="footer__list">
+                <a href="#" class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >プライバシーポリシー</a
+                >
+              </li>
+              <li class="footer__list">
+                <a
+                  href="/partners.html"
+                  class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >保険一覧</a
+                >
+              </li>
+              <li class="footer__list">
+                <a
+                  href="/contact.html"
+                  class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >お問い合わせ</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <small class="footer__copyright font-size-caption"
+          >&copy; 2025 A&amp;A consulting All rights reserved</small
+        >
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

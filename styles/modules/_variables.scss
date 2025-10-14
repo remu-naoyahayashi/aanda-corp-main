@@ -1,0 +1,21 @@
+// ここにカラー情報やフォント情報を集約
+
+$font-ja: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック",
+  "Yu Gothic", "Noto Sans JP", sans-serif;
+
+@font-face {
+  font-family: "ttf";
+  src: url("../../font/tt-norms-regular.otf");
+}
+
+$font-en: "ttf", "Montserrat", sans-serif;
+$font-helvetica: Helvetica, "Montserrat", sans-serif;
+$font-serif: "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+
+$color-black: #000;
+$color-light-black: #383838;
+$color-blue: #395483;
+$color-light-blue: #8598b9;
+$color-white: #fff;
+$color-bg-gray: #f6f6f6;
+$color-bg-white: #fafaf8;

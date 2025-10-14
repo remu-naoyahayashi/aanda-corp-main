@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>A&A consulting</title>
+
+    <link rel="icon" href="./images/favicon.png" sizes="32x32" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" class="header__logo">
+        <img src="./images/logo_black.webp" alt="A$A consulting" />
+      </a>
+      <button class="header__btn js-menu-btn">
+        <span class="header__btn-bar"></span>
+        <span class="header__btn-bar"></span>
+        <span class="header__btn-bar"></span>
+      </button>
+
+      <nav class="header__nav">
+        <ul class="header__nav-lists">
+          <li class="header__nav-list">
+            <a href="/concept.html" class="header__nav-link hover-default">経営理念</a>
+          </li>
+          <li class="header__nav-list">
+            <a href="/concept.html#concept-info" class="header__nav-link hover-default">会社概要</a>
+          </li>
+          <li class="header__nav-list">
+            <a href="/members.html" class="header__nav-link hover-default">メンバー一覧</a>
+          </li>
+          <li class="header__nav-list">
+            <a href="/partners.html" class="header__nav-link hover-default">取り扱い保険会社</a>
+          </li>
+          <li class="header__nav-list">
+            <a href="/contact.html" class="header__nav-link hover-default">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="drawer js-drawer">
+      <nav class="drawer__nav">
+        <ul class="drawer__nav-lists">
+          <li class="drawer__nav-list">
+            <a href="/concept.html" class="drawer__nav-link js-nav-link hover-default">経営理念</a>
+          </li>
+          <li class="drawer__nav-list">
+            <a href="/concept.html#concept-info" class="drawer__nav-link js-nav-link hover-default"
+              >会社概要</a
+            >
+          </li>
+          <li class="drawer__nav-list">
+            <a href="/members.html" class="drawer__nav-link js-nav-link hover-default"
+              >メンバー一覧</a
+            >
+          </li>
+          <li class="drawer__nav-list">
+            <a href="/partners.html" class="drawer__nav-link js-nav-link hover-default"
+              >取り扱い保険会社</a
+            >
+          </li>
+          <li class="drawer__nav-list">
+            <a href="/contact.html" class="drawer__nav-link js-nav-link hover-default"
+              >お問い合わせ</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="thanks-page">
+      <section class="thanks">
+        <div class="thanks__inner">
+          <h1 class="thanks__heading-en">thank you</h1>
+          <h1 class="thanks__heading-ja">お問い合わせを受け付けました</h1>
+
+          <div class="thanks__img">
+            <img src="./images/thanks-check.svg" alt="Check Icon" />
+          </div>
+          <p class="thanks__text">
+            お問い合わせありがとうございます。<br />記載いただいたメールアドレス宛に<br />２〜３営業日以内にご返信を差し上げますので<br />担当者からのご連絡をお待ちください。
+          </p>
+          <p class="thanks__text">
+            万が一返信がない場合は恐れ入りますが<br />再度お問い合わせくださいませ。
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__flex">
+          <a href="/" class="footer__logo"
+            ><img src="./images/logo_white.webp" alt="A&A consulting" loading="lazy"
+          /></a>
+          <nav class="footer__nav">
+            <ul class="footer__lists">
+              <li class="footer__list">
+                <a href="/concept.html" class="footer__link font-size-pc3-3 hover-default"
+                  >企業理念</a
+                >
+              </li>
+              <li class="footer__list">
+                <a
+                  href="/concept.html#concept-info"
+                  class="footer__link font-size-pc3-3 hover-default"
+                  >会社概要</a
+                >
+              </li>
+              <li class="footer__list">
+                <a href="/members.html" class="footer__link font-size-pc3-3 hover-default"
+                  >メンバー一覧</a
+                >
+              </li>
+              <li class="footer__list">
+                <a href="#" class="footer__link font-size-pc3-3 hover-default"
+                  >プライバシーポリシー</a
+                >
+              </li>
+              <li class="footer__list">
+                <a href="/partners.html" class="footer__link font-size-pc3-3 hover-default"
+                  >保険一覧</a
+                >
+              </li>
+              <li class="footer__list">
+                <a href="/contact.html" class="footer__link font-size-pc3-3 hover-default"
+                  >お問い合わせ</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <small class="footer__copyright font-size-caption"
+          >&copy; 2025 A&amp;A consulting All rights reserved</small
+        >
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A&A consulting</title>
+
+    <link rel="icon" href="./images/favicon.png" sizes="32x32" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" class="header__logo">
+        <img src="./images/logo_black.webp" alt="A$A consulting" />
+      </a>
+      <button class="header__btn js-menu-btn">
+        <span class="header__btn-bar"></span>
+        <span class="header__btn-bar"></span>
+        <span class="header__btn-bar"></span>
+      </button>
+
+      <nav class="header__nav">
+        <ul class="header__nav-lists">
+          <li class="header__nav-list">
+            <a href="/concept.html" class="header__nav-link hover-default">経営理念</a>
+          </li>
+          <li class="header__nav-list">
+            <a href="/concept.html#concept-info" class="header__nav-link hover-default">会社概要</a>
+          </li>
+          <li class="header__nav-list">
+            <a href="/members.html" class="header__nav-link hover-default">メンバー一覧</a>
+          </li>
+          <li class="header__nav-list">
+            <a href="#" class="header__nav-link hover-default">取り扱い保険会社</a>
+          </li>
+          <li class="header__nav-list">
+            <a href="/contact.html" class="header__nav-link hover-default">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="drawer js-drawer">
+      <nav class="drawer__nav">
+        <ul class="drawer__nav-lists">
+          <li class="drawer__nav-list">
+            <a href="/concept.html" class="drawer__nav-link js-nav-link hover-default">経営理念</a>
+          </li>
+          <li class="drawer__nav-list">
+            <a href="/concept.html#concept-info" class="drawer__nav-link js-nav-link hover-default"
+              >会社概要</a
+            >
+          </li>
+          <li class="drawer__nav-list">
+            <a href="/members.html" class="drawer__nav-link js-nav-link hover-default"
+              >メンバー一覧</a
+            >
+          </li>
+          <li class="drawer__nav-list">
+            <a href="#" class="drawer__nav-link js-nav-link hover-default">取り扱い保険会社</a>
+          </li>
+          <li class="drawer__nav-list">
+            <a href="/contact.html" class="drawer__nav-link js-nav-link hover-default"
+              >お問い合わせ</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="partners-page">
+      <section class="partners">
+        <div class="partners__inner">
+          <h1 class="partners__heading-en">partners</h1>
+          <h1 class="partners__heading-ja">お取引先</h1>
+
+          <div class="partners__container">
+            <h2 class="partners__sub-heading">保険会社一覧</h2>
+            <div class="partners__lists">
+              <ul class="partners__list-flex">
+                <li class="partners__list">
+                  <a
+                    href="https://www.gib-life.co.jp/"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >ジブラルタ生命保険株式会社</a
+                  >
+                </li>
+                <li class="partners__list">
+                  <a
+                    href="https://www.tmn-anshin.co.jp/"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >東京海上日動あんしん生命保険株式会社</a
+                  >
+                </li>
+                <li class="partners__list">
+                  <a
+                    href="https://www.nissay.co.jp/"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >日本生命保険株式会社</a
+                  >
+                </li>
+                <li class="partners__list">
+                  <a
+                    href="https://www.meijiyasuda.co.jp/"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >明治安田生命保険株式会社</a
+                  >
+                </li>
+                <li class="partners__list">
+                  <a
+                    href="https://www.himawari-life.co.jp/"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >ＳＯＭＰＯひまわり生命保険株式会社</a
+                  >
+                </li>
+                <li class="partners__list">
+                  <a
+                    href="https://www.orixlife.co.jp/"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >オリックス生命保険株式会社</a
+                  >
+                </li>
+                <li class="partners__list">
+                  <a
+                    href="https://www.axa.co.jp/"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >アクサ生命保険株式会社</a
+                  >
+                </li>
+              </ul>
+              <ul class="partners__list-flex">
+                <li class="partners__list">
+                  <a
+                    href="https://www.life8739.co.jp/"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >はなさく生命保険株式会社</a
+                  >
+                </li>
+                <li class="partners__list">
+                  <a
+                    href="https://www.dai-ichi-life.co.jp/"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >第一生命保険株式会社</a
+                  >
+                </li>
+                <li class="partners__list">
+                  <a
+                    href="https://www.d-frontier-life.co.jp/"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >第一フロンティア生命保険株式会社</a
+                  >
+                </li>
+                <li class="partners__list">
+                  <a
+                    href="https://www.medicarelife.com/"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >メディケア生命保険株式会社</a
+                  >
+                </li>
+                <li class="partners__list">
+                  <a
+                    href="https://www.nnlife.co.jp/"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >エヌエヌ生命保険株式会社</a
+                  >
+                </li>
+                <li class="partners__list">
+                  <a
+                    href="https://www.msa-life.co.jp/"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >三井住友海上あいおい生命保険株式会社</a
+                  >
+                </li>
+                <li class="partners__list">
+                  <a
+                    href="https://www.fwdlife.co.jp/"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >FWD生命保険株式会社</a
+                  >
+                </li>
+              </ul>
+              <ul class="partners__list-flex">
+                <li class="partners__list">
+                  <a
+                    href="https://www.manulife.co.jp/ja/individual.html"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >マニュライフ生命保険株式会社</a
+                  >
+                </li>
+                <li class="partners__list">
+                  <a
+                    href="https://neofirst.co.jp/"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >ネオファースト生命保険株式会社</a
+                  >
+                </li>
+                <li class="partners__list">
+                  <a
+                    href="https://www.metlife.co.jp/"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >メットライフ生命保険株式会社</a
+                  >
+                </li>
+                <li class="partners__list">
+                  <a
+                    href="https://www.sonylife.co.jp/"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >ソニー生命保険株式会社</a
+                  >
+                </li>
+                <li class="partners__list">
+                  <a
+                    href="https://www.asahi-life.co.jp/"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >朝日生命保険株式会社</a
+                  >
+                </li>
+                <li class="partners__list">
+                  <a
+                    href="https://www.nanairolife.co.jp/company/#section1"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >なないろ生命保険株式会社</a
+                  >
+                </li>
+                <li class="partners__list">
+                  <a
+                    href="https://www.zurichlife.co.jp/"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >チューリッヒ生命保険株式会社</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="partners__container">
+            <h2 class="partners__sub-heading">損保会社一覧</h2>
+            <div class="partners__lists partners__lists--2">
+              <ul class="partners__list-flex">
+                <li class="partners__list">
+                  <a
+                    href="https://www.ms-ins.com/"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >三井住友海上火災保険株式会社</a
+                  >
+                </li>
+                <li class="partners__list">
+                  <a
+                    href="https://www.tokiomarine-nichido.co.jp/"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >東京海上日動火災保険株式会社</a
+                  >
+                </li>
+              </ul>
+              <ul class="partners__list-flex">
+                <li class="partners__list">
+                  <a
+                    href="https://www.capital-sonpo.co.jp/"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >キャピタル損害保険株式会社</a
+                  >
+                </li>
+                <li class="partners__list">
+                  <a
+                    href="https://www.sbisonpo.co.jp/"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >SBI損害保険株式会社</a
+                  >
+                </li>
+              </ul>
+              <ul class="partners__list-flex">
+                <li class="partners__list">
+                  <a
+                    href="https://www.sompo-japan.co.jp/"
+                    class="partners__link hover-default"
+                    target="_blank"
+                    >損害保険ジャパン株式会社</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="partners__others">
+            <h2 class="partners__sub-heading">その他の取り組み</h2>
+            <ul class="partners__others-lists">
+              <li class="partners__others-list partners__others-list--1">
+                <a
+                  href="https://forms.gle/aFPLdEHAaz2ZFyMk7"
+                  class="partners__others-link hover-default"
+                  target="_blank"
+                >
+                  <div class="partners__others-img">
+                    <picture>
+                      <source
+                        media="(min-width: 660px)"
+                        srcset="./images/partners/partners-ai-pc.webp"
+                      />
+                      <img
+                        src="./images/partners/partners-ai-sp.webp"
+                        alt="AI × botサービス"
+                        loading="lazy"
+                      />
+                    </picture>
+                  </div>
+                  <p class="partners__others-text">AI × botサービスの販売</p>
+                </a>
+              </li>
+              <li class="partners__others-list partners__others-list--2">
+                <a
+                  href="https://salesbranding.jp"
+                  class="partners__others-link hover-default"
+                  target="_blank"
+                >
+                  <div class="partners__others-img">
+                    <picture>
+                      <source
+                        media="(min-width: 660px)"
+                        srcset="./images/partners/partners-self-branding-pc.webp"
+                      />
+                      <img
+                        src="./images/partners/partners-self-branding-sp.webp"
+                        alt="SalesBranding.jp"
+                        loading="lazy"
+                      />
+                    </picture>
+                  </div>
+                  <p class="partners__others-text partners__others-text--2">
+                    営業マンのセルフブランディングページ
+                  </p>
+                </a>
+              </li>
+              <li class="partners__others-list partners__others-list--3">
+                <a
+                  href="https://hoken.jcci.or.jp"
+                  class="partners__others-link hover-default"
+                  target="_blank"
+                >
+                  <div class="partners__others-img">
+                    <picture>
+                      <source
+                        media="(min-width: 660px)"
+                        srcset="./images/partners/partners-shoukoukai-pc.webp"
+                      />
+                      <img
+                        src="./images/partners/partners-shoukoukai-sp.webp"
+                        alt="2021年 東京商工会議所 損保共済制度 推進代理店"
+                        loading="lazy"
+                      />
+                    </picture>
+                  </div>
+                  <p class="partners__others-text">東京商工会議所</p>
+                </a>
+              </li>
+              <li class="partners__others-list partners__others-list-4">
+                <a
+                  href="https://aaconsulting.notion.site/26f7287542b480a8931dda49eadb6892?source=copy_link"
+                  class="partners__others-link hover-default"
+                  target="_blank"
+                >
+                  <div class="partners__others-img">
+                    <picture>
+                      <source
+                        media="(min-width: 660px)"
+                        srcset="./images/partners/partners-money-navi-pc.webp"
+                      />
+                      <img
+                        src="./images/partners/partners-money-navi-sp.webp"
+                        alt="マネナビ"
+                        loading="lazy"
+                      />
+                    </picture>
+                  </div>
+                  <p class="partners__others-text">マネナビ</p>
+                </a>
+              </li>
+              <li class="partners__others-list partners__others-list--5">
+                <a
+                  href="https://wtw-con.co.jp/winbox"
+                  class="partners__others-link hover-default"
+                  target="_blank"
+                >
+                  <div class="partners__others-img partners__others-img--5">
+                    <picture>
+                      <source
+                        media="(min-width: 660px)"
+                        srcset="./images/partners/partners-winbox-pc.webp"
+                      />
+                      <img
+                        src="./images/partners/partners-winbox-sp.webp"
+                        alt="Winbox +"
+                        loading="lazy"
+                      />
+                    </picture>
+                  </div>
+                  <p class="partners__others-text">Winbox +</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__flex">
+          <a href="/" class="footer__logo"
+            ><img src="./images/logo_white.webp" alt="A&A consulting" loading="lazy"
+          /></a>
+          <nav class="footer__nav">
+            <ul class="footer__lists">
+              <li class="footer__list">
+                <a
+                  href="/concept.html"
+                  class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >企業理念</a
+                >
+              </li>
+              <li class="footer__list">
+                <a
+                  href="/concept.html#concept-info"
+                  class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >会社概要</a
+                >
+              </li>
+              <li class="footer__list">
+                <a
+                  href="/members.html"
+                  class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >メンバー一覧</a
+                >
+              </li>
+              <li class="footer__list">
+                <a href="#" class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >プライバシーポリシー</a
+                >
+              </li>
+              <li class="footer__list">
+                <a href="#" class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >保険一覧</a
+                >
+              </li>
+              <li class="footer__list">
+                <a
+                  href="/contact.html"
+                  class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >お問い合わせ</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <small class="footer__copyright font-size-caption"
+          >&copy; 2025 A&amp;A consulting All rights reserved</small
+        >
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

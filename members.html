@@ -1,732 +1,173 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A&A consulting</title>
 
-    <link rel="icon" href="./images/favicon.png" sizes="32x32" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <a href="/" class="header__logo">
-        <img src="./images/logo_black.webp" alt="A$A consulting" />
-      </a>
-      <button class="header__btn js-menu-btn">
-        <span class="header__btn-bar"></span>
-        <span class="header__btn-bar"></span>
-        <span class="header__btn-bar"></span>
-      </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A&A consulting</title>
 
-      <nav class="header__nav">
-        <ul class="header__nav-lists">
-          <li class="header__nav-list">
-            <a href="/concept.html" class="header__nav-link hover-default">経営理念</a>
-          </li>
-          <li class="header__nav-list">
-            <a href="/concept.html#concept-info" class="header__nav-link hover-default">会社概要</a>
-          </li>
-          <li class="header__nav-list">
-            <a href="#" class="header__nav-link hover-default">メンバー一覧</a>
-          </li>
-          <li class="header__nav-list">
-            <a href="/partners.html" class="header__nav-link hover-default">取り扱い保険会社</a>
-          </li>
-          <li class="header__nav-list">
-            <a href="/contact.html" class="header__nav-link hover-default">お問い合わせ</a>
+  <link rel="icon" href="./images/favicon.png" sizes="32x32" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="./js/members.js"></script>
+
+</head>
+
+<body>
+  <header class="header">
+    <a href="./" class="header__logo">
+      <img src="./images/logo_black.webp" alt="A$A consulting" />
+    </a>
+    <button class="header__btn js-menu-btn">
+      <span class="header__btn-bar"></span>
+      <span class="header__btn-bar"></span>
+      <span class="header__btn-bar"></span>
+    </button>
+
+    <nav class="header__nav">
+      <ul class="header__nav-lists">
+        <li class="header__nav-list">
+          <a href="./concept.html" class="header__nav-link hover-default">経営理念</a>
+        </li>
+        <li class="header__nav-list">
+          <a href="./concept.html#concept-info" class="header__nav-link hover-default">会社概要</a>
+        </li>
+        <li class="header__nav-list">
+          <a href="#" class="header__nav-link hover-default">メンバー一覧</a>
+        </li>
+        <li class="header__nav-list">
+          <a href="./partners.html" class="header__nav-link hover-default">取り扱い保険会社</a>
+        </li>
+        <li class="header__nav-list">
+          <a href="./contact.html" class="header__nav-link hover-default">お問い合わせ</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="drawer js-drawer">
+    <nav class="drawer__nav">
+      <ul class="drawer__nav-lists">
+        <li class="drawer__nav-list">
+          <a href="./concept.html" class="drawer__nav-link js-nav-link hover-default">経営理念</a>
+        </li>
+        <li class="drawer__nav-list">
+          <a href="./concept.html#concept-info" class="drawer__nav-link js-nav-link hover-default">会社概要</a>
+        </li>
+        <li class="drawer__nav-list">
+          <a href="#" class="drawer__nav-link js-nav-link hover-default">メンバー一覧</a>
+        </li>
+        <li class="drawer__nav-list">
+          <a href="./partners.html" class="drawer__nav-link js-nav-link hover-default">取り扱い保険会社</a>
+        </li>
+        <li class="drawer__nav-list">
+          <a href="./contact.html" class="drawer__nav-link js-nav-link hover-default">お問い合わせ</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <main class="members-page">
+    <section class="members">
+      <div class="members__inner">
+        <h1 class="members__heading-en">members</h1>
+        <h1 class="members__heading-ja">メンバー一覧</h1>
+
+        <ul class="members__lists">
+          <li class="members-list">
+            <a href="{{detail_path}}" class="members-list__link">
+              <div class="members-list__img">
+                <img src="{{img_path}}" alt="{{name_en}}" loading="lazy" />
+              </div>
+              <p class="members-list__name-ja">{{name_ja}}</p>
+              <p class="members-list__name-en">{{name_en}}</p>
+            </a>
           </li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </section>
+  </main>
 
-    <div class="drawer js-drawer">
-      <nav class="drawer__nav">
-        <ul class="drawer__nav-lists">
-          <li class="drawer__nav-list">
-            <a href="/concept.html" class="drawer__nav-link js-nav-link hover-default">経営理念</a>
-          </li>
-          <li class="drawer__nav-list">
-            <a href="/concept.html#concept-info" class="drawer__nav-link js-nav-link hover-default"
-              >会社概要</a
-            >
-          </li>
-          <li class="drawer__nav-list">
-            <a href="#" class="drawer__nav-link js-nav-link hover-default">メンバー一覧</a>
-          </li>
-          <li class="drawer__nav-list">
-            <a href="/partners.html" class="drawer__nav-link js-nav-link hover-default"
-              >取り扱い保険会社</a
-            >
-          </li>
-          <li class="drawer__nav-list">
-            <a href="/contact.html" class="drawer__nav-link js-nav-link hover-default"
-              >お問い合わせ</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-    <main class="members-page">
-      <section class="members">
-        <div class="members__inner">
-          <h1 class="members__heading-en">members</h1>
-          <h1 class="members__heading-ja">メンバー一覧</h1>
-
-          <ul class="members__lists">
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/YutoAlain_Katsura.webp"
-                    alt="Yuto Alain Katsura"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">桂 雄人 アラン</p>
-                <p class="members-list__name-en">Yuto Alain Katsura</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Makoto_Nakayama.webp"
-                    alt="Makoto Nakayama"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">中山 誠</p>
-                <p class="members-list__name-en">Makoto Nakayama</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Toshitaka_Matsumura.webp"
-                    alt="Toshitaka_Matsumura"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">松村 俊孝</p>
-                <p class="members-list__name-en">Toshitaka Matsumura</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Naoki_Minagawa.webp"
-                    alt="Naoki Minagawa"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">皆川 直輝</p>
-                <p class="members-list__name-en">Naoki Minagawa</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Shigeki_Harada.webp"
-                    alt="Shigeki Harada"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">原田 茂樹</p>
-                <p class="members-list__name-en">Shigeki Harada</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Ryosuke_Ishii.webp"
-                    alt="Ryosuke Ishii"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">石井 亮丞</p>
-                <p class="members-list__name-en">Ryosuke Ishii</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Shuntaro_Tomiyama.webp"
-                    alt="Shuntaro Tomiyama"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">富山 俊太郎</p>
-                <p class="members-list__name-en">Shuntaro Tomiyama</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img src="./images/members/Motoki_Irabe.webp" alt="Motoki Irabe" loading="lazy" />
-                </div>
-                <p class="members-list__name-ja">伊良部 元幹</p>
-                <p class="members-list__name-en">Motoki Irabe</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Takumi_Koyama.webp"
-                    alt="Takumi Koyama"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">小山 拓海</p>
-                <p class="members-list__name-en">Takumi Koyama</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Ryu_Yokoshima.webp"
-                    alt="Ryu Yokoshima"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">横島 竜</p>
-                <p class="members-list__name-en">Ryu Yokoshima</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img src="./images/members/Yu_Ohnumata.webp" alt="Yu Ohnumata" loading="lazy" />
-                </div>
-                <p class="members-list__name-ja">大沼田 悠</p>
-                <p class="members-list__name-en">Yu Ohnumata</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Yasutsugu_Nishimoto.webp"
-                    alt="Yasutsugu Nishimoto"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">西本 泰承</p>
-                <p class="members-list__name-en">Yasutsugu Nishimoto</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Kyoka_Okazaki.webp"
-                    alt="Kyoka Okazaki"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">岡﨑 馨加</p>
-                <p class="members-list__name-en">Kyoka Okazaki</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img src="./images/members/Aya_Kato.webp" alt="Aya Kato" loading="lazy" />
-                </div>
-                <p class="members-list__name-ja">加藤 理</p>
-                <p class="members-list__name-en">Aya Kato</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Yasunori_Kawamoto.webp"
-                    alt="Yasunori Kawamoto"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">川本 靖典</p>
-                <p class="members-list__name-en">Yasunori Kawamoto</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Yusuke_Takamiya.webp"
-                    alt="Yusuke Takamiya"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">高宮 佑介</p>
-                <p class="members-list__name-en">Yusuke Takamiya</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img src="./images/members/Ryo_Kameda.webp" alt="Ryo Kameda" loading="lazy" />
-                </div>
-                <p class="members-list__name-ja">亀田 亮</p>
-                <p class="members-list__name-en">Ryo Kameda</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img src="./images/members/Kaori_Masuda.webp" alt="Kaori Masuda" loading="lazy" />
-                </div>
-                <p class="members-list__name-ja">増田 香里</p>
-                <p class="members-list__name-en">Kaori Masuda</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img src="./images/members/Shogo_Nagumo.webp" alt="Shogo Nagumo" loading="lazy" />
-                </div>
-                <p class="members-list__name-ja">南雲 将吾</p>
-                <p class="members-list__name-en">Shogo Nagumo</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Makoto_Umezaki.webp"
-                    alt="Makoto Umezaki"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">梅﨑 誠</p>
-                <p class="members-list__name-en">Makoto Umezaki</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Ryunosuke_Aguni.webp"
-                    alt="Ryunosuke Aguni"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">粟国 隆之介</p>
-                <p class="members-list__name-en">Ryunosuke Aguni</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img src="./images/members/Tatsuya_Ura.webp" alt="Tatsuya Ura" loading="lazy" />
-                </div>
-                <p class="members-list__name-ja">浦 竜也</p>
-                <p class="members-list__name-en">Tatsuya Ura</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img src="./images/members/Misaki_Ando.webp" alt="Misaki Ando" loading="lazy" />
-                </div>
-                <p class="members-list__name-ja">安東 美紗貴</p>
-                <p class="members-list__name-en">Misaki Ando</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Daisuke_Miura.webp"
-                    alt="Daisuke Miura"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">Daisuke Miura</p>
-                <p class="members-list__name-en">Daisuke Miura</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Maya_Tomikawa.webp"
-                    alt="Maya Tomikawa"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">富川 まや</p>
-                <p class="members-list__name-en">Maya Tomikawa</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Hitomi_Yamashita.webp"
-                    alt="Hitomi Yamashita"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">山下 ひとみ</p>
-                <p class="members-list__name-en">Hitomi Yamashita</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img src="./images/members/Maki_Okumura.webp" alt="Maki Okumura" loading="lazy" />
-                </div>
-                <p class="members-list__name-ja">奥村 真紀</p>
-                <p class="members-list__name-en">Maki Okumura</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img src="./images/members/Kanae_Mogi.webp" alt="Kanae Mogi" loading="lazy" />
-                </div>
-                <p class="members-list__name-ja">茂木 香苗</p>
-                <p class="members-list__name-en">Kanae Mogi</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img src="./images/members/Takuya_Ishii.webp" alt="Takuya Ishii" loading="lazy" />
-                </div>
-                <p class="members-list__name-ja">石井 卓也</p>
-                <p class="members-list__name-en">Takuya Ishii</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img src="./images/members/Kosuke_Gomi.webp" alt="Kosuke Gomi" loading="lazy" />
-                </div>
-                <p class="members-list__name-ja">五味 晃祐</p>
-                <p class="members-list__name-en">Kosuke Gomi</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img src="./images/members/Yoshino_Ando.webp" alt="Yoshino Ando" loading="lazy" />
-                </div>
-                <p class="members-list__name-ja">安藤 由乃</p>
-                <p class="members-list__name-en">Yoshino Ando</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Junkou_Minami.webp"
-                    alt="Junkou Minami"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">Junkou Minami</p>
-                <p class="members-list__name-en">Junkou Minami</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Hisanari_Saito.webp"
-                    alt="Hisanari Saito"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">齋藤 久誠</p>
-                <p class="members-list__name-en">Hisanari Saito</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Hitoshi_Kashima.webp"
-                    alt="Hitoshi Kashima"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">Hitoshi Kashima</p>
-                <p class="members-list__name-en">Hitoshi Kashima</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img src="./images/members/Fusuke_Kato.webp" alt="Fusuke Kato" loading="lazy" />
-                </div>
-                <p class="members-list__name-ja">加藤 鳳助</p>
-                <p class="members-list__name-en">Fusuke Kato</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img src="./images/members/Shuta_Otani.webp" alt="Shuta Otani" loading="lazy" />
-                </div>
-                <p class="members-list__name-ja">大谷 修太</p>
-                <p class="members-list__name-en">Shuta Otani</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Shusuke_Tsuda.webp"
-                    alt="Shusuke Tsuda"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">Shusuke Tsuda</p>
-                <p class="members-list__name-en">Shusuke Tsuda</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Jumpei_Koyama.webp"
-                    alt="Jumpei Koyama"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">小山 純平</p>
-                <p class="members-list__name-en">Jumpei Koyama</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img src="./images/members/Yuta_Yamada.webp" alt="Yuta Yamada" loading="lazy" />
-                </div>
-                <p class="members-list__name-ja">山田 悠太</p>
-                <p class="members-list__name-en">Yuta Yamada</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Shiori_Otsuka.webp"
-                    alt="Shiori Otsuka"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">大塚 史緒里</p>
-                <p class="members-list__name-en">Shiori Otsuka</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Fumiya_Nikaido.webp"
-                    alt="Fumiya Nikaido"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">二階堂 文哉</p>
-                <p class="members-list__name-en">Fumiya Nikaido</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Shinya_Tamashiro.webp"
-                    alt="Shinya Tamashiro"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">玉城 慎也</p>
-                <p class="members-list__name-en">Shinya Tamashiro</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Daiki_Kadowaki.webp"
-                    alt="Daiki Kadowaki"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">門脇 大樹</p>
-                <p class="members-list__name-en">Daiki Kadowaki</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img src="./images/members/Rika_Nanzaki.webp" alt="Rika Nanzaki" loading="lazy" />
-                </div>
-                <p class="members-list__name-ja">南崎 李佳</p>
-                <p class="members-list__name-en">Rika Nanzaki</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Yuichi_Sakano.webp"
-                    alt="Yuichi Sakano"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">Yuichi Sakano</p>
-                <p class="members-list__name-en">Yuichi Sakano</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Shunkai_Koizumi.webp"
-                    alt="Shunkai Koizumi"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">小泉 春海</p>
-                <p class="members-list__name-en">Shunkai Koizumi</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Yukie_Koizumi.webp"
-                    alt="Yukie Koizumi"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">小泉 由紀恵</p>
-                <p class="members-list__name-en">Yukie Koizumi</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Susumu_Takahashi.webp"
-                    alt="Susumu Takahashi"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">Susumu Takahashi</p>
-                <p class="members-list__name-en">Susumu Takahashi</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Itaru_Hakamada.webp"
-                    alt="Itaru Hakamada"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">袴田 格</p>
-                <p class="members-list__name-en">Itaru Hakamada</p>
-              </a>
-            </li>
-            <li class="members-list">
-              <a href="#" class="members-list__link">
-                <div class="members-list__img">
-                  <img
-                    src="./images/members/Amane_Kobayashi.webp"
-                    alt="Amane Kobayashi"
-                    loading="lazy"
-                  />
-                </div>
-                <p class="members-list__name-ja">Amane Kobayashi</p>
-                <p class="members-list__name-en">Amane Kobayashi</p>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer__inner">
-        <div class="footer__flex">
-          <a href="/" class="footer__logo"
-            ><img src="./images/logo_white.webp" alt="A&A consulting" loading="lazy"
-          /></a>
-          <nav class="footer__nav">
-            <ul class="footer__lists">
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__flex">
+        <a href="./" class="footer__logo"><img src="./images/logo_white.webp" alt="A&A consulting" loading="lazy" /></a>
+        <nav class="footer__nav">
+          <ul class="footer__lists">
               <li class="footer__list">
                 <a
-                  href="/concept.html"
+                  href="./concept.html"
                   class="footer__link font-size4 font-size-pc3-3 hover-default"
                   >企業理念</a
                 >
               </li>
               <li class="footer__list">
                 <a
-                  href="/concept.html#concept-info"
+                  href="./concept.html#concept-info"
                   class="footer__link font-size4 font-size-pc3-3 hover-default"
                   >会社概要</a
                 >
               </li>
               <li class="footer__list">
-                <a href="#" class="footer__link font-size4 font-size-pc3-3 hover-default"
+                <a
+                  href="./members.html"
+                  class="footer__link font-size4 font-size-pc3-3 hover-default"
                   >メンバー一覧</a
                 >
               </li>
               <li class="footer__list">
-                <a href="#" class="footer__link font-size4 font-size-pc3-3 hover-default"
-                  >プライバシーポリシー</a
-                >
-              </li>
-              <li class="footer__list">
                 <a
-                  href="/partners.html"
+                  href="./partners.html"
                   class="footer__link font-size4 font-size-pc3-3 hover-default"
                   >保険一覧</a
                 >
               </li>
               <li class="footer__list">
-                <a
-                  href="/contact.html"
-                  class="footer__link font-size4 font-size-pc3-3 hover-default"
+                <a href="./privacy-policy.html" class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >プライバシーポリシー</a
+                >
+              </li>
+              <li class="footer__list">
+                <a href="./specified-commercial.html" class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >特定商取引法</a
+                >
+              </li>
+              <li class="footer__list">
+                <a href="./solicitation-policy.html" class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >勧誘方針</a
+                >
+              </li>
+              <li class="footer__list">
+                <a href="./fd-declaration.html" class="footer__link font-size4 font-size-pc3-3 hover-default"
+                  >FD宣言</a
+                >
+              </li>
+              <li class="footer__list">
+                <a href="./images/KPI.pdf" class="footer__link font-size4 font-size-pc3-3 hover-default" target="_blank"
+                  >KPIの取組みについて</a
+                >
+              </li>
+              <li class="footer__list">
+                <a href="./contact.html" class="footer__link font-size4 font-size-pc3-3 hover-default"
                   >お問い合わせ</a
                 >
               </li>
             </ul>
-          </nav>
-        </div>
-
-        <small class="footer__copyright font-size-caption"
-          >&copy; 2025 A&amp;A consulting All rights reserved</small
-        >
+        </nav>
       </div>
-    </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/main.js"></script>
-  </body>
+      <small class="footer__copyright font-size-caption">&copy; 2025 A&amp;A consulting All rights reserved</small>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>

@@ -280,7 +280,7 @@ h3 {
             flex-shrink: 0;
             width: 30px;
             height: 23px;
-            background: url("../images/header-btn-arrow.svg") no-repeat center/contain;
+            background: url("./images/header-btn-arrow.svg") no-repeat center/contain;
           }
         }
       }
@@ -414,15 +414,15 @@ h3 {
       background-repeat: no-repeat;
 
       &--1 {
-        background-image: url("../images/top-fv1.jpg");
+        background-image: url("./images/top-fv1.jpg");
       }
 
       &--2 {
-        background-image: url("../images/top-fv2.jpg");
+        background-image: url("./images/top-fv2.jpg");
       }
 
       &--3 {
-        background-image: url("../images/top-fv3.jpg");
+        background-image: url("./images/top-fv3.jpg");
       }
 
       &.is-active {
@@ -481,7 +481,7 @@ h3 {
         flex-shrink: 0;
         width: 25px;
         height: 24px;
-        background: url("../images/icon-calender.svg") no-repeat center/contain;
+        background: url("./images/icon-calender.svg") no-repeat center/contain;
       }
     }
   }
@@ -664,7 +664,7 @@ h3 {
         flex-shrink: 0;
         width: 8.995px;
         height: 9px;
-        background: url("../images/steps-link-arrow.svg") no-repeat center/contain;
+        background: url("./images/steps-link-arrow.svg") no-repeat center/contain;
       }
     }
   }
@@ -785,7 +785,7 @@ h3 {
       height: 44px;
       top: 50%;
       transform: translateY(-50%);
-      background: url("../images/members-slide-arrow.svg") no-repeat center center/contain;
+      background: url("./images/members-slide-arrow.svg") no-repeat center center/contain;
       right: 11px;
 
       &::after {
@@ -882,7 +882,7 @@ h3 {
         right: 2px;
         width: 20px;
         height: 10px;
-        background: url("../images/qa-arrow.svg") no-repeat center center / contain;
+        background: url("./images/qa-arrow.svg") no-repeat center center / contain;
       }
     }
 
@@ -916,7 +916,7 @@ h3 {
 .concept-page {
   .fv {
     margin-top: 66px;
-    background: url("../images/concept-fv-sp.webp") no-repeat center center / contain;
+    background: url("./images/concept-fv-sp.webp") no-repeat center center / contain;
     color: $color-white;
     width: 100%;
     aspect-ratio: 402/449;
@@ -1583,7 +1583,7 @@ h3 {
         width: 18px;
         height: 16px;
         left: 2px;
-        background: url("../images/form-check.svg") no-repeat center center / contain;
+        background: url("./images/form-check.svg") no-repeat center center / contain;
         opacity: 0;
       }
 

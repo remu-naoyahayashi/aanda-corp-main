@@ -114,7 +114,7 @@ h3 {
 
       &--2 {
         &--2 {
-        background-image: url("../images/top-fv2-sp.jpg");
+        background-image: url("./images/top-fv2-sp.jpg");
       }
       }
 
@@ -245,7 +245,7 @@ h3 {
         flex-shrink: 0;
         width: 42px;
         height: 42px;
-        background: url("../images/icon-calender.svg") no-repeat center/contain;
+        background: url("./images/icon-calender.svg") no-repeat center/contain;
       }
     }
 
@@ -448,7 +448,7 @@ h3 {
       &::after {
         width: 43.372px;
         height: 17.695px;
-        background: url("../images/members-link-arrow-blue.svg") no-repeat center center / contain;
+        background: url("./images/members-link-arrow-blue.svg") no-repeat center center / contain;
       }
     }
 
@@ -504,7 +504,7 @@ h3 {
         left: 12px;
         width: 24px;
         height: 24px;
-        background: url("../images/qa-plus.svg") no-repeat center center / contain;
+        background: url("./images/qa-plus.svg") no-repeat center center / contain;
       }
     }
 
@@ -534,7 +534,7 @@ h3 {
 
 .concept-page {
   .fv {
-    background: url("../images/concept-fv-pc.webp") no-repeat center center / contain;
+    background: url("./images/concept-fv-pc.webp") no-repeat center center / contain;
     aspect-ratio: 1920/728;
 
     &__text-inner {

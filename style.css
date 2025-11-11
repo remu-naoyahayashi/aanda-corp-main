@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "ttf";
-  src: url("../../font/tt-norms-regular.otf");
+  src: url("./font/tt-norms-regular.otf");
 }
 /******************************************************************
 
@@ -264,7 +264,7 @@ h3 {
     flex-shrink: 0;
     width: 30px;
     height: 23px;
-    background: url("../images/header-btn-arrow.svg") no-repeat center/contain;
+    background: url("./images/header-btn-arrow.svg") no-repeat center/contain;
   }
   .header__nav-link {
     color: #000;
@@ -372,13 +372,13 @@ h3 {
   background-repeat: no-repeat;
 }
 .top-page .fv__slide--1 {
-  background-image: url("../images/top-fv1.jpg");
+  background-image: url("./images/top-fv1.jpg");
 }
 .top-page .fv__slide--2 {
-  background-image: url("../images/top-fv2.jpg");
+  background-image: url("./images/top-fv2.jpg");
 }
 .top-page .fv__slide--3 {
-  background-image: url("../images/top-fv3.jpg");
+  background-image: url("./images/top-fv3.jpg");
 }
 .top-page .fv__slide.is-active {
   opacity: 1;
@@ -429,7 +429,7 @@ h3 {
   flex-shrink: 0;
   width: 25px;
   height: 24px;
-  background: url("../images/icon-calender.svg") no-repeat center/contain;
+  background: url("./images/icon-calender.svg") no-repeat center/contain;
 }
 .top-page .about {
   padding: 40px 0 54px;
@@ -586,7 +586,7 @@ h3 {
   flex-shrink: 0;
   width: 8.995px;
   height: 9px;
-  background: url("../images/steps-link-arrow.svg") no-repeat center/contain;
+  background: url("./images/steps-link-arrow.svg") no-repeat center/contain;
 }
 .top-page .service {
   padding: 46px 0;
@@ -686,7 +686,7 @@ h3 {
   height: 44px;
   top: 50%;
   transform: translateY(-50%);
-  background: url("../images/members-slide-arrow.svg") no-repeat center center/contain;
+  background: url("./images/members-slide-arrow.svg") no-repeat center center/contain;
   right: 11px;
 }
 .top-page .members__slide-next::after {
@@ -770,7 +770,7 @@ h3 {
   right: 2px;
   width: 20px;
   height: 10px;
-  background: url("../images/qa-arrow.svg") no-repeat center center/contain;
+  background: url("./images/qa-arrow.svg") no-repeat center center/contain;
 }
 .top-page .qa-list__head-text {
   color: #000;
@@ -794,7 +794,7 @@ h3 {
 
 .concept-page .fv {
   margin-top: 66px;
-  background: url("../images/concept-fv-sp.webp") no-repeat center center/contain;
+  background: url("./images/concept-fv-sp.webp") no-repeat center center/contain;
   color: #fff;
   width: 100%;
   aspect-ratio: 402/449;
@@ -1364,7 +1364,7 @@ h3 {
   width: 18px;
   height: 16px;
   left: 2px;
-  background: url("../images/form-check.svg") no-repeat center center/contain;
+  background: url("./images/form-check.svg") no-repeat center center/contain;
   opacity: 0;
 }
 .contact-page .form__checkbox-text a {
@@ -1558,7 +1558,7 @@ h3 {
     aspect-ratio: 1846/887;
   }
   .top-page .fv__slide--2--2 {
-    background-image: url("../images/top-fv2-sp.jpg");
+    background-image: url("./images/top-fv2-sp.jpg");
   }
   .top-page .fv__slide.is-active {
     opacity: 1;
@@ -1666,7 +1666,7 @@ h3 {
     flex-shrink: 0;
     width: 42px;
     height: 42px;
-    background: url("../images/icon-calender.svg") no-repeat center/contain;
+    background: url("./images/icon-calender.svg") no-repeat center/contain;
   }
   .top-page .about-consulting__text {
     margin-top: clamp(-88px, -8.59vw, 0px);
@@ -1823,7 +1823,7 @@ h3 {
   .top-page .members__link::after {
     width: 43.372px;
     height: 17.695px;
-    background: url("../images/members-link-arrow-blue.svg") no-repeat center center/contain;
+    background: url("./images/members-link-arrow-blue.svg") no-repeat center center/contain;
   }
   .top-page .members__main-text {
     font-size: clamp(20px, 3.13vw, 32px);
@@ -1869,7 +1869,7 @@ h3 {
     left: 12px;
     width: 24px;
     height: 24px;
-    background: url("../images/qa-plus.svg") no-repeat center center/contain;
+    background: url("./images/qa-plus.svg") no-repeat center center/contain;
   }
   .top-page .qa-list__head-text {
     color: #000;
@@ -1888,7 +1888,7 @@ h3 {
     line-height: 1.66;
   }
   .concept-page .fv {
-    background: url("../images/concept-fv-pc.webp") no-repeat center center/contain;
+    background: url("./images/concept-fv-pc.webp") no-repeat center center/contain;
     aspect-ratio: 1920/728;
   }
   .concept-page .fv__text-inner {
@@ -2288,3 +2288,305 @@ h3 {
     font-size: 18px;
   }
 }/*# sourceMappingURL=style.css.map */
+
+/* ======================================
+   ポリシーページ用スタイル
+   (プライバシーポリシー、特商法、勧誘方針、FD宣言)
+====================================== */
+
+/* 共通スタイル */
+.contact-page .privacy-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  line-height: 1.8;
+}
+
+.contact-page .privacy-content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #333;
+}
+
+.contact-page .privacy-content h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.contact-page .privacy-content p {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contact-page .privacy-content ul {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.contact-page .privacy-content li {
+  margin-bottom: 8px;
+  list-style-type: disc;
+}
+
+/* プライバシーポリシー用 */
+.contact-page .privacy-content .company-list {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.contact-page .privacy-content .company-list li {
+  list-style-type: none;
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 0;
+}
+
+.contact-page .privacy-content .company-list li::before {
+  content: "■";
+  position: absolute;
+  left: -20px;
+  font-size: 0.8em;
+  line-height: 1.8;
+}
+
+.contact-page .contact-info {
+  background-color: #e8f0f7 !important;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+.contact-page .contact-info p {
+  margin-bottom: 8px;
+}
+
+/* 特商法用 */
+.contact-page .info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.contact-page .info-table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.contact-page .info-table th {
+  text-align: left;
+  padding: 15px 10px;
+  font-weight: 600;
+  width: 30%;
+  vertical-align: top;
+  background-color: #e8f0f7 !important;
+}
+
+.contact-page .info-table td {
+  padding: 15px 10px;
+  vertical-align: top;
+}
+
+.contact-page .privacy-content .info-section {
+  background-color: #e8f0f7 !important;
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 8px;
+}
+
+.contact-page .privacy-content .info-section h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-page .privacy-content .info-section p {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* 勧誘方針用 */
+.contact-page .intro-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #e8f0f7 !important;
+  border-radius: 8px;
+}
+
+.contact-page .policy-item {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-left: 4px solid #333;
+}
+
+.contact-page .policy-item h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.contact-page .policy-item p {
+  margin-bottom: 0;
+  line-height: 1.8;
+}
+
+.contact-page .company-info {
+  background-color: #e8f0f7 !important;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 8px;
+  text-align: right;
+}
+
+.contact-page .company-info p {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* FD宣言用 */
+.contact-page .intro-section {
+  padding: 0 0 20px 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.contact-page .intro-section p {
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
+
+.contact-page .principle-box {
+  padding: 0 0 20px 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.contact-page .principle-box h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.contact-page .principle-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-page .principle-list li {
+  padding: 8px 0 8px 15px;
+  line-height: 1.8;
+  position: relative;
+}
+
+.contact-page .principle-list li::before {
+  /* content: "・"; */
+  position: absolute;
+  left: 0;
+}
+
+.contact-page .initiative-item {
+  padding: 0 0 20px 0;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #ddd;
+}
+
+.contact-page .initiative-item h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.15rem;
+  color: #333;
+}
+
+.contact-page .initiative-item p {
+  margin-bottom: 12px;
+  line-height: 1.8;
+}
+
+.contact-page .criteria-box {
+  padding: 15px 0;
+  margin: 15px 0;
+}
+
+.contact-page .criteria-box ol {
+  margin: 10px 0;
+  padding-left: 25px;
+}
+
+.contact-page .criteria-box li {
+  margin-bottom: 8px;
+  line-height: 1.8;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+  .contact-page .privacy-content {
+    padding: 20px 15px;
+  }
+
+  .contact-page .privacy-content h2 {
+    font-size: 1.3rem;
+    margin-top: 30px;
+  }
+
+  .contact-page .privacy-content h3 {
+    font-size: 1.1rem;
+    margin-top: 25px;
+  }
+
+  .contact__heading-en {
+    font-size: 1.3rem;
+  }
+
+  .contact__heading-ja {
+    font-size: 1.3rem;
+  }
+
+  .contact-page .contact-info {
+    padding: 15px;
+  }
+
+  /* 特商法用レスポンシブ */
+  .contact-page .info-table th,
+  .contact-page .info-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .contact-page .info-table th {
+    padding-bottom: 5px;
+  }
+
+  .contact-page .info-table td {
+    padding-top: 5px;
+  }
+
+  .contact-page .info-section {
+    padding: 15px;
+  }
+
+  /* 勧誘方針用レスポンシブ */
+  .contact-page .intro-text {
+    padding: 15px;
+  }
+
+  .contact-page .policy-item {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .contact-page .policy-item h3 {
+    font-size: 1rem;
+  }
+
+  .contact-page .company-info {
+    padding: 15px;
+  }
+}
